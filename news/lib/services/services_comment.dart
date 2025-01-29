@@ -44,7 +44,7 @@ class ServicesComment {
     return comments;
   }
 
-  Future<List<Comment>> getAll() async {
+  Future<List<Comment>> getIfs() async {
     //Buscar ultimo ID de noticia salvo
     int? commentId;
 
