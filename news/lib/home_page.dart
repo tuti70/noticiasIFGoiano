@@ -30,7 +30,6 @@ class _HomePageState extends State<HomePage> {
               return Center(child: CircularProgressIndicator());
             } else {
               _comments = snapshot.data!;
-
               return ListView.separated(
                   itemCount: _comments.length,
                   separatorBuilder: (context, index) => Divider(),
@@ -39,7 +38,6 @@ class _HomePageState extends State<HomePage> {
                     return ListTile(
                       title: Text(_comment.title),
                       subtitle: Text(_comment.subtitle),
-                      isThreeLine: true,
                     );
                   });
             }
