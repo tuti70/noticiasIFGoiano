@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/home_page.dart';
+import 'package:news/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         secondaryHeaderColor: Color.fromARGB(255, 216, 0, 0),
         scaffoldBackgroundColor: const Color.fromARGB(255, 211, 211, 211),
       ),
-      home: const HomePage(),
+      home: HomeScreen(),
     );
   }
 }
