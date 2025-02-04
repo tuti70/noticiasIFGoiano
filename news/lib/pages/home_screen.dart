@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/home_page.dart';
+import 'package:news/school_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    //SchoolPage(),
+    SchoolPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -53,27 +54,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-// class HomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Center(
-//       child: Text(
-//         'Home Page',
-//         style: TextStyle(fontSize: 24),
-//       ),
-//     );
-//   }
-// }
-
-// class SchoolPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Center(
-//       child: Text(
-//         'School Page',
-//         style: TextStyle(fontSize: 24),
-//       ),
-//     );
-//   }
-// }

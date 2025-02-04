@@ -21,11 +21,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-        // backgroundColor:
-        //     Theme.of(context).primaryColor, // Definindo a cor de fundo
         body: FutureBuilder(
-      future: _repo.getAll(),
+      future: _fetchComments(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return Center(child: CircularProgressIndicator());
@@ -37,10 +34,11 @@ class _HomePageState extends State<HomePage> {
               Comment _comment = _comments[index];
               return GestureDetector(
                 onLongPress: () async {
-                  if (await canLaunch(_comment.url)) {
-                    await launch(_comment.url);
+                  final Uri _uri = Uri.parse(_comment.url);
+                  if (await canLaunchUrl(_uri)) {
+                    await launchUrl(_uri);
                   } else {
-                    throw 'Could not launch ${_comment.url}';
+                    throw 'Could not launch $_uri';
                   }
                 },
                 child: Card(

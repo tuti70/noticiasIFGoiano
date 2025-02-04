@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news/home_page.dart';
 import 'package:news/home_screen.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'IF News',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        //brightness: Brightness.light,
+        brightness: Brightness.light,
         primaryColor: Color.fromARGB(255, 9, 192, 33),
         secondaryHeaderColor: Color.fromARGB(255, 216, 0, 0),
         scaffoldBackgroundColor: const Color.fromARGB(255, 211, 211, 211),
