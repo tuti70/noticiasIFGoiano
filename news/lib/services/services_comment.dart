@@ -10,7 +10,7 @@ class ServicesComment {
     // SharedPreferences prefs = await SharedPreferences.getInstance();
     // int? lastNewsId = await prefs.getInt('lastNewsId');
 
-    String url = "http://157.245.254.121/ultimas-noticias/?&limit=20";
+    String url = "http://157.245.254.121/ultimas-noticias/?&limit=40";
     Map<String, String> Headers = {
       HttpHeaders.contentTypeHeader: "application/json'; charset=UTF-8;",
     };

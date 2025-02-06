@@ -26,14 +26,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
-        toolbarHeight: 65.0,
+        toolbarHeight: 75.0,
         leading: Padding(
-          padding: const EdgeInsets.all(2),
+          padding: const EdgeInsets.only(left: 5, top: 5),
           child: Image(
-            image: AssetImage("../assets/images/logo.png"),
-            fit: BoxFit.fill,
-            width: 50,
-            height: 50,
+            image: AssetImage("assets/images/logo.png"),
+            fit: BoxFit.contain,
           ),
         ),
         title: Text(
