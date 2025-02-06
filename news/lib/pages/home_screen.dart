@@ -26,8 +26,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
+        toolbarHeight: 65.0,
+        leading: Padding(
+          padding: const EdgeInsets.all(2),
+          child: Image(
+            image: AssetImage("../assets/images/logo.png"),
+            fit: BoxFit.fill,
+            width: 50,
+            height: 50,
+          ),
+        ),
         title: Text(
-          'IF News',
+          'News',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,

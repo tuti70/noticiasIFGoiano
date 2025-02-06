@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IF News',
+      title: 'NEWS',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,

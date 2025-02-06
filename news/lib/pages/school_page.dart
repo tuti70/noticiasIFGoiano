@@ -40,7 +40,7 @@ class _SchoolPageState extends State<SchoolPage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
         title: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
           child: DropdownButtonFormField<String>(
             value: _selectedCity,
             items: _cities.map((String city) {
@@ -67,6 +67,7 @@ class _SchoolPageState extends State<SchoolPage> {
                     color: const Color.fromARGB(
                         255, 223, 223, 223)), // Cor da borda quando focado
               ),
+              contentPadding: EdgeInsets.symmetric(vertical: 5.0),
             ),
             style: TextStyle(color: Colors.white), // Cor do texto selecionado
             dropdownColor: Theme.of(context).primaryColor,
